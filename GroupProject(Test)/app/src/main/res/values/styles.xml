@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/Secondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Secondary">#707070</color>
+
+    //Палитра
+
+    <color name="DarkBlue">#2C3043</color>
+    <color name="Blue">#4254BC</color>
+    <color name="Purple">#C840E9</color>
+    <color name="Red">#FF1853</color>
+    <color name="Orange"> #FFB900</color>
+    <color name="LightBlue">#78849E</color>
+
+
+</resources>
