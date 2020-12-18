@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Test"></activity>
+        <activity android:name=".Menus"></activity>
+        <activity android:name=".BottomSheet" />
+        <activity android:name=".StartScreen" />
         <activity android:name=".DriveTimer" />
         <activity android:name=".WaitTimer" />
         <activity android:name=".Settings" />
         <activity android:name=".History" />
-        <activity android:name=".StartScreen" />
         <activity
             android:name=".SignIn"
             android:label="SignIn" />
