@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_reg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp">
@@ -16,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_sign_in"
+        android:id="@+id/button_sign_up"
         android:layout_width="312dp"
         android:layout_height="50dp"
         android:layout_marginBottom="37dp"
@@ -43,7 +44,7 @@
         android:paddingStart="18dp"
         android:paddingEnd="18dp"
         android:textSize="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -72,19 +73,18 @@
         android:layout_width="312dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/new_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/custom_input"
-        android:fontFamily="@font/ubuntu_regular"
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="18dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu_regular"
+        android:inputType="textEmailAddress"
         android:paddingStart="18dp"
         android:paddingEnd="18dp"
-        android:elevation="3dp"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/new_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/new_username"
