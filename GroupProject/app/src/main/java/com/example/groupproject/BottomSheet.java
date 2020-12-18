@@ -1,29 +1,29 @@
 package com.example.groupproject;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+public class BottomSheet extends AppCompatActivity {
 
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+    Button book;
 
-public class BottomSheet extends BottomSheetDialogFragment {
-
-
-    public BottomSheet() {
-    }
-
-
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_botton_sheet);
 
-       View view = inflater.inflate(R.layout.layout_bottom_sheet, container, false);
+        book = findViewById(R.id.buttonBook);
 
-
-       return view;
+        book.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BottomSheet.this, WaitTimer.class);
+                startActivity(intent);
+            }
+        });
     }
 }

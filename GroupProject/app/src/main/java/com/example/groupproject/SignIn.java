@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class SignIn extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class SignIn extends AppCompatActivity {
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignIn.this, Test.class);
+                Intent intent = new Intent(SignIn.this, StartScreen.class);
                 startActivity(intent);
             }
         });
